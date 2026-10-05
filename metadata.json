@@ -1,0 +1,6 @@
+{
+  "name": "COSMOS - Deep Space Explorer",
+  "description": "Deep space astronomical observatory and celestial dome tracker with real-time telemetry, mission trackers, and sky radar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

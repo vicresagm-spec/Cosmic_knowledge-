@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #051424;
+  --color-surface-dim: #051424;
+  --color-surface-bright: #2c3a4c;
+  --color-surface-container-lowest: #010f1f;
+  --color-surface-container-low: #0d1c2d;
+  --color-surface-container: #122131;
+  --color-surface-container-high: #1c2b3c;
+  --color-surface-container-highest: #273647;
+  --color-surface-variant: #273647;
+  --color-on-surface: #d4e4fa;
+  --color-on-surface-variant: #bdc8d1;
+  --color-inverse-surface: #d4e4fa;
+  --color-inverse-on-surface: #233143;
+  --color-outline: #87929a;
+  --color-outline-variant: #3e484f;
+  --color-surface-tint: #7bd0ff;
+  --color-primary: #8ed5ff;
+  --color-on-primary: #00354a;
+  --color-primary-container: #38bdf8;
+  --color-on-primary-container: #004965;
+  --color-inverse-primary: #00668a;
+  --color-secondary: #ddb7ff;
+  --color-on-secondary: #490080;
+  --color-secondary-container: #6f00be;
+  --color-on-secondary-container: #d6a9ff;
+  --color-tertiary: #ffc174;
+  --color-on-tertiary: #472a00;
+  --color-tertiary-container: #f59e0b;
+  --color-on-tertiary-container: #613b00;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-headline-sm: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-display-hero: "Space Grotesk", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-telemetry-sm: "JetBrains Mono", monospace;
+  --font-telemetry-lg: "JetBrains Mono", monospace;
+  --font-label-caps: "JetBrains Mono", monospace;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-gutter-sm: 0.75rem;
+  --spacing-gutter: 1rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-tablet: 2rem;
+}
+
+@layer utilities {
+  .text-headline-sm {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .text-headline-md {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+  .text-headline-lg {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+  .text-headline-lg-mobile {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+  }
+  .text-display-hero {
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+  }
+  .text-body-sm {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .text-body-md {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .text-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .text-telemetry-sm {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+  }
+  .text-telemetry-lg {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .text-label-caps {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Starlight and radar pulse animations */
+@keyframes radar-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 12s linear infinite;
+}
